@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="results-container">
+        <h1>Student Results</h1>
+        <div id="studentInfo">
+            <h2>Dashboard</h2>
+            <div id="marks">
+                <h3>Marks and Grades</h3>
+                <ul id="marksList"></ul>
+                <p>Total Marks: <span id="totalMarks"></span></p>
+                <p>Average: <span id="average"></span></p>
+                <p>CGPA: <span id="cgpa"></span></p>
+            </div>
+            <div class="chart-container">
+                <h3>Marks by Subject</h3>
+                <canvas id="marksChart" width="400" height="200"></canvas>
+                <h3>Grade Distribution</h3>
+                <canvas id="gradesChart" width="400" height="200"></canvas>
+                <h3>Semester Results</h3>
+                <canvas id="semesterChart" width="400" height="200"></canvas>
+                <h3>Progress Over Terms</h3>
+                <canvas id="progressChart" width="400" height="200"></canvas>
+            </div>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </div>
+    <script src="results.js"></script>
+</body>
+</html>
